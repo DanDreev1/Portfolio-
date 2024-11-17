@@ -86,10 +86,12 @@
    width: 60px;
    height: 60px;
 
-   background-image: url(./assets/images/Icons/GitHub.svg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+.github {
+   background-image: url(./assets/images/Icons/GitHub.svg);
 }
 .insta {
    background-image: url(./assets/images/Icons/Insta.svg);
