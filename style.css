@@ -52,13 +52,10 @@
 .menu {
    display: flex;
    align-items: center;
+   gap: 30px
 }
 .list {
    list-style: none;
-   margin-right: 30px;
-}
-.list:last-child {
-   margin: 0;
 }
 .link {
    text-decoration: none;
@@ -72,6 +69,28 @@
    background-image: linear-gradient(to right, #00DDFF, #0077FF);
    color: transparent;
    background-clip: text;
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+}
+
+.hamMenu {
+   display: none;
+   cursor: pointer;
+   margin-left: 50px;
+   z-index: 100;
+}
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: #000;
 }
 
 .social {
@@ -126,12 +145,11 @@
 }
 
 /* Code */
-.code {
-   margin-bottom: 100px;
-}
 .code__video {
    border-radius: 15px;
    border: #000 3px solid;
+   position: relative;
+   z-index: -1;
 }
 
 /* Footer */
@@ -200,7 +218,9 @@
 
 /* Audio */
 .audio {
+   position: relative;
    margin-bottom: 40px;
+   z-index: -1;
 }
 
 /* Goals */
@@ -209,6 +229,8 @@
    flex-direction: column;
    align-items: center;
    margin-top: 50px;
+   position: relative;
+   z-index: -1;
 }
 .goals__list {
    list-style: none;
@@ -301,6 +323,9 @@
    font-size: 16px;
    margin-bottom: 50px;
    color: #000;
+
+   position: relative;
+   z-index: -1;
 }
 .comeback__link {
    display: inline-block;
@@ -331,6 +356,8 @@
 }
 .including__menu {
    margin-top: 50px;
+   position: relative;
+   z-index: -1;
 }
 .including__list {
    list-style: none;
@@ -439,6 +466,9 @@
    flex-wrap: wrap;
    gap: 50px;
    margin-top: 70px;
+
+   position: relative;
+   z-index: -1;
 }
 
 /* Block */
@@ -521,6 +551,8 @@
    margin-top: 50px;
    position: relative;
    padding: 30px 0;
+
+   z-index: -1;
 }
 .experience__timeline::before {
    position: absolute;
@@ -630,6 +662,7 @@
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
    font-size: 20px;
+   text-align: center;
 }
 .timeline__dates-right {
    margin-left: 10px;
@@ -644,6 +677,9 @@
    flex-wrap: nowrap;
    justify-content: space-between;
    margin-top: 80px;
+   
+   position: relative;
+   z-index: -1;
 }
 .projects__list {
    list-style: none;
@@ -830,10 +866,6 @@
       max-width: 350px;
    }
 
-   .code {
-      margin-bottom: 80px;
-   }
-
    .personal {
       margin-bottom: 60px;
    }
@@ -920,8 +952,228 @@
    }
 }
 @media only screen and (max-width: 768px) {
+   .container {
+      width: 480px;
+   }
+   .subtitle {
+      font-size: 20px;
+   }
+   .text {
+      font-size: 14px;
+   }
 
+
+   .hamMenu {
+      display: block;
+   }
+   .hamMenu.activeham .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+   }
+   .hamMenu.activeham .bar:nth-child(2) {
+      opacity: 0;
+   }
+   .hamMenu.activeham .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+   }
+
+   .menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      gap: 0;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #cbd5e1;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: 0.3s;
+   }
+   .list {
+      margin: 16px 0;
+   }
+   .menu.activeham {
+      left: 0;
+   }
+
+   .title {
+      font-size: 24px;
+      margin-bottom: 10px;
+   }
+   .hero__subtitle {
+      font-size: 18px;
+      margin-bottom: 15px;
+   }
+   .hero__text {
+      font-size: 16px;
+   }
+   .heroImg {
+      max-width: 225px;
+   }
+
+   .footer {
+      margin: 50px 0 0;
+      padding: 20px 0;
+   }
+   .footer__title {
+      font-size: 18px;
+   }
+   .footer__contact {
+      font-size: 14px;
+      padding: 12px 30px;
+   }
+
+   .developer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+   }
+
+   .including__text {
+      font-size: 12px;
+   }
+
+   .benefits__text {
+      font-size: 13px;
+      padding: 0 20px;
+   }
+
+   .experience__timeline::before {
+      left: 29px;
+   }
+   .experience__timeline-element {
+      justify-content: space-between;
+   }
+   .timeline__image-content {
+      width: 250px;
+      justify-content: start;
+   }
+   .timeline-element__first {
+      flex-direction: row-reverse;
+   }
+   .timeline-element__third {
+      flex-direction: row-reverse;
+   }
+   .image__content-zero {
+      flex-direction: row-reverse;
+      margin: 0;
+   }
+   .image__content-first {
+      margin: 0;
+   }
+   .image__content-second {
+      flex-direction: row-reverse;
+      margin: 0;
+   }
+   .image__content-third {
+      margin: 0;
+   }
+   .timeline__content {
+      padding: 25px 40px;
+   }
+   .timeline__dates-left {
+      margin: 0 10px;
+   }
+   .timeline__dates-right {
+      margin: 0 10px;
+   }
+   
+   .projects__menu {
+      flex-wrap: wrap;
+      gap: 50px;
+   }
+
+   .contacts__title {
+      font-size: 36px;
+   }
 }
 @media only screen and (max-width: 480px) {
+   .container {
+      width: 300px;
+   }
 
+   .logo {
+      width: 50px;
+      height: 50px;
+   }
+   .social__link {
+      width: 40px;
+      height: 40px;
+   }
+   .hamMenu {
+      margin-left: 30px;
+   }
+   .insta {
+      margin-left: 20px;
+   }
+   .hero {
+      flex-direction: column-reverse;
+   }
+   .hero__content {
+      text-align: center;
+   }
+   .heroImg {
+      margin-bottom: 30px;
+   }
+
+   .code__video {
+      width: 294px;
+   }
+
+   .footer__title {
+      font-size: 14px;
+   }
+   .footer__contact {
+      font-size: 12px;
+      padding: 10px 25px;
+   }
+
+   .goals__text {
+      width: 210px;
+   }
+
+   .comeback__text {
+      font-size: 14px;
+   }
+
+   .including__text {
+      height: 100%;
+      padding: 10px 15px;
+   }
+   .including__text::before {
+      display: none;
+   }
+
+   .benefits__content {
+      grid-template-columns: 1fr;
+      gap: 15px;
+   }
+
+   .skills__block {
+      justify-content: center;
+   }
+
+   .experience__timeline-element {
+      flex-direction: column;
+      align-items: start;
+   }
+   .timeline-element__first {
+      flex-direction: column-reverse;
+   }
+   .timeline-element__third {
+      flex-direction: column-reverse;
+   }
+   .timeline__image-content {
+      margin-bottom: 20px;
+      width: 100%;
+   }
+   .timeline__content {
+      width: 220px;
+   }
+
+   .contacts__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+   }
 }

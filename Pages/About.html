@@ -14,25 +14,34 @@
     <div class="container">
         <header class="header">
             <a class="logo" href="../index.html"></a>
-            <ul class="menu">
-                <li class="list">
-                    <a class="link" href="./Personal.html">Personal</a>
-                </li>
-                <li class="list">
-                    <a class="link active" href="#">About</a>
-                </li>
-                <li class="list">
-                    <a class="link" href="./Projects.html">Projects</a>
-                </li>
-            </ul>
-            <ul class="social">
-                <li class="social__list">
-                    <a class="social__link github" target="_blank" href="https://github.com/DanDreev1"></a>
-                </li>
-                <li class="social__list">
-                    <a class="social__link insta" target="_blank" href="https://www.instagram.com/daniil_andrieiev?igsh=MTN5NDN3eTVsZjF6dw=="></a>
-                </li>
-            </ul>
+            <nav>
+                <ul class="menu">
+                    <li class="list">
+                        <a class="link" href="./Personal.html">Personal</a>
+                    </li>
+                    <li class="list">
+                        <a class="link active" href="#">About</a>
+                    </li>
+                    <li class="list">
+                        <a class="link" href="./Projects.html">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex">
+                <div class="hamMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="social">
+                    <li class="social__list">
+                        <a class="social__link github" target="_blank" href="https://github.com/DanDreev1"></a>
+                    </li>
+                    <li class="social__list">
+                        <a class="social__link insta" target="_blank" href="https://www.instagram.com/daniil_andrieiev?igsh=MTN5NDN3eTVsZjF6dw=="></a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <section class="greetings">
             <h1 class="greetings__title">Hello I'm <span class="greetings__gradient">Daniil</span></h1>
@@ -109,7 +118,7 @@
             <ul class="experience__timeline">
                 <li class="experience__timeline-element">
                     <div class="timeline__image-content image__content-zero">
-                        <span class="experience__timeline-dates timeline__dates-left">September 2022 - May 2024</span>
+                        <span class="experience__timeline-dates timeline__dates-left">September 2022<br> - <br>May 2024</span>
                         <img class="timeline__image black-background" src="../assets/images/Icons/ColegYCymoedd.jpg" alt="">
                     </div>
                     <div class="timeline__content">
@@ -122,7 +131,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="experience__timeline-element">
+                <li class="experience__timeline-element timeline-element__first">
                     <div class="timeline__content">
                         <h3 class="timeline__title">Front End Developer</h3>
                         <span class="timeline__name">EuroPlastic</span>
@@ -132,12 +141,12 @@
                     </div>
                     <div class="timeline__image-content image__content-first">
                         <img class="timeline__image blue-background" src="../assets/images/Icons/EuroPlastic.png" alt="">
-                        <span class="experience__timeline-dates timeline__dates-right">October 2022 - April 2023</span>
+                        <span class="experience__timeline-dates timeline__dates-right">October 2022<br> - <br>April 2023</span>
                     </div>
                 </li>
                 <li class="experience__timeline-element">
                     <div class="timeline__image-content image__content-second">
-                        <span class="experience__timeline-dates timeline__dates-left">April 2023 - May 2024</span>
+                        <span class="experience__timeline-dates timeline__dates-left">April 2023<br> - <br>May 2024</span>
                         <img class="timeline__image orange-background" src="../assets/images/Icons/Electomagnit.png" alt="">
                     </div>
                     <div class="timeline__content">
@@ -151,7 +160,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="experience__timeline-element">
+                <li class="experience__timeline-element timeline-element__third">
                     <div class="timeline__content">
                         <h3 class="timeline__title">Web Design and Development</h3>
                         <span class="timeline__name">Edinburgh Napier University</span>
@@ -161,7 +170,7 @@
                     </div>
                     <div class="timeline__image-content image__content-third">
                         <img class="timeline__image green-background" src="../assets/images/Icons/download.png" alt="">
-                        <span class="experience__timeline-dates timeline__dates-right">September 2024 - Now</span>
+                        <span class="experience__timeline-dates timeline__dates-right">September 2024<br> - <br>Now</span>
                     </div>
                 </li>
             </ul>
@@ -172,5 +181,6 @@
             <a class="footer__contact" href="./Contact.html">Contact</a>
         </footer>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
