@@ -148,8 +148,6 @@
 .code__video {
    border-radius: 15px;
    border: #000 3px solid;
-   position: relative;
-   z-index: -1;
 }
 
 /* Footer */
@@ -218,9 +216,7 @@
 
 /* Audio */
 .audio {
-   position: relative;
    margin-bottom: 40px;
-   z-index: -1;
 }
 
 /* Goals */
@@ -323,9 +319,6 @@
    font-size: 16px;
    margin-bottom: 50px;
    color: #000;
-
-   position: relative;
-   z-index: -1;
 }
 .comeback__link {
    display: inline-block;
@@ -466,9 +459,6 @@
    flex-wrap: wrap;
    gap: 50px;
    margin-top: 70px;
-
-   position: relative;
-   z-index: -1;
 }
 
 /* Block */
@@ -551,8 +541,6 @@
    margin-top: 50px;
    position: relative;
    padding: 30px 0;
-
-   z-index: -1;
 }
 .experience__timeline::before {
    position: absolute;
@@ -627,16 +615,16 @@
    justify-content: center;
 }
 .image__content-zero {
-   margin-left: 220px;
+   margin-left: 335px;
 }
 .image__content-first {
-   margin-right: 255px;
+   margin-right: 375px;
 }
 .image__content-second {
-   margin-left: 285px;
+   margin-left: 403px;
 }
 .image__content-third {
-   margin-right: 277px;
+   margin-right: 345px;
 }
 .timeline__image {
    width: 50px;
@@ -677,9 +665,6 @@
    flex-wrap: nowrap;
    justify-content: space-between;
    margin-top: 80px;
-   
-   position: relative;
-   z-index: -1;
 }
 .projects__list {
    list-style: none;
@@ -793,16 +778,16 @@
    }
 
    .image__content-zero {
-      margin-left: 160px;
+      margin-left: 277px;
    }
    .image__content-first {
-      margin-right: 195px;
+      margin-right: 315px;
    }
    .image__content-second {
-      margin-left: 227px;
+      margin-left: 343px;
    }
    .image__content-third {
-      margin-right: 220px;
+      margin-right: 285px;
    }
 
    .timeline__title {
@@ -926,16 +911,16 @@
       padding: 7px;
    }
    .image__content-zero {
-      margin: 0 20px 0 133px;
+      margin: 0 20px 0 213px;
    }
    .image__content-first {
-      margin: 0 160px 0 20px;
+      margin: 0 245px 0 20px;
    }
    .image__content-second {
-      margin: 0 20px 0 180px;
+      margin: 0 20px 0 260px;
    }
    .image__content-third {
-      margin: 0 175px 0 20px;
+      margin: 0 220px 0 20px;
    }
 
    .projects__title {
@@ -988,6 +973,7 @@
       height: 100%;
       text-align: center;
       transition: 0.3s;
+      z-index: 100;
    }
    .list {
       margin: 16px 0;
