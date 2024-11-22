@@ -22,12 +22,13 @@
    margin-bottom: 30px;
 }
 .text {
-   margin-bottom: 20px;
-
    font-family: "Montserrat", sans-serif;
    font-weight: 600;
    font-size: 24px;
    color: #64748B;
+   text-decoration: none;
+
+   margin-bottom: 20px;
 }
 
 /* Header */
@@ -210,8 +211,8 @@
    margin-bottom: 20px;
 }
 .personal__logo {
-   width: 340px;
-   height: 100px;
+   width: 60%;
+   height: 100%;
 }
 
 /* Audio */
@@ -310,6 +311,9 @@
    text-decoration: none;
    border-radius: 15px;
 }
+.page__link:focus-visible {
+   border: #fff 3px solid;
+}
 
 /* Come Back Link */
 .comeback__text {
@@ -390,6 +394,10 @@
    font-weight: 700;
    font-size: 16px;
    color: #fff;
+}
+.including__text:focus-visible::before {
+   top: 33px;
+   border: #FF8C09 2px solid;
 }
 
 .one::before {
@@ -944,6 +952,7 @@
       font-size: 20px;
    }
    .text {
+      color: #333947;
       font-size: 14px;
    }
 
