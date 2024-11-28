@@ -716,6 +716,9 @@
 .contacts__title {
    margin-bottom: 50px;
 }
+.contacts__link {
+   text-decoration: underline;
+}
 
 
 @media only screen and (max-width: 1200px) {
